@@ -1,11 +1,11 @@
 FROM node:9-slim
-WORKDIR /main
+WORKDIR /app
 
 COPY package*.json ./
 
 RUN npm install
 
-COPY . /main
+COPY . /app
 
 EXPOSE 8080
 
