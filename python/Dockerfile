@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY requirements/backend.in .
 
-RUN pip install --no-cache-dir -r requirements/backend.in
+RUN pip install --no-cache-dir -r backend.in
 
 COPY . .
 
